@@ -54,55 +54,7 @@ def upload_dataset(uploaded_file) -> str:
         raise error
 
 def main():
-    """Main Streamlit application."""
-    # Add custom CSS styles to enhance the look
-    st.markdown(
-        """
-        <style>
-        body {
-            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
-            color: white;
-            font-family: 'Arial', sans-serif;
-        }
-        .stButton>button {
-            background: linear-gradient(45deg, #FF416C, #FF4B2B);
-            color: white;
-            font-weight: bold;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            padding: 10px 20px;
-            transition: background-color 0.3s ease;
-        }
-        .stButton>button:hover {
-            background: linear-gradient(45deg, #FF4B2B, #FF416C);
-        }
-        .stTextArea>textarea {
-            background-color: rgba(255, 255, 255, 0.1);
-            color: white;
-            border-radius: 8px;
-            padding: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        .stTextInput>input {
-            background-color: rgba(255, 255, 255, 0.1);
-            color: white;
-            border-radius: 8px;
-            padding: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        .stTitle, .stHeader {
-            color: #FF4B2B;
-            font-weight: bold;
-            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
-        }
-        .stCheckbox>div {
-            color: white;
-        }
-        </style>
-        """, unsafe_allow_html=True
-    )
-
-    st.title("📊 AI Data Visualization Agent")
+    st.title("📊 VizAI: Data_Visualisation_Assistant")
     st.write("Upload your dataset and ask questions about it!")
 
     # Initialize session state variables
